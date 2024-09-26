@@ -15,38 +15,97 @@
 	--active-tabb: rgba(97, 74, 130, 0);
 	--color1: #E46A78;
 	--color2: #98BC6D;
-	--color3: #E5C283;
-	--color4: #7EB3C9;
+	--color4: #E5C283;
+	--color3: #7EB3C9;
 	--color5: #957FB8;
+	--color1-rgba: rgba(228, 106, 120, 0.7);
+	--color5-rgba: rgba(152, 188, 109, 0.7);
+	--color3-rgba: rgba(229, 194, 131, 0.7);
+	--color2-rgba: rgba(126, 179, 201, 0.7);
+	--color4-rgba: rgba(149, 127, 184, 0.7);
 }
 
 .nord-theme {
 	--bg: #2E3440;
 	--text-color: #D8DEE9;
-	--accent: #5E81AC;
+	--color5: #5E81AC;
 	--navbar: rgba(46, 52, 64, 0.77);
 	--active-taba: rgba(94, 129, 172, 1);
 	--active-tabb: rgba(94, 129, 172, 0);
 	--color1: #88C0D0;
-	--color2: #EBCB8B;
+	--color4: #EBCB8B;
 	--color3: #B48EAD;
-	--color4: #BF616A;
-	--color5: #A3BE8C;
+	--accent: #BF616A;
+	--color2: #A3BE8C;
+	--color1-rgba: rgba(136, 192, 208, 0.7);
+	--color5-rgba: rgba(235, 203, 139, 0.7);
+	--color3-rgba: rgba(180, 142, 173, 0.7);
+	--color2-rgba: rgba(191, 97, 106, 0.7);
+	--color4-rgba: rgba(163, 190, 140, 0.7);
 }
 
 .gruvbox-light-theme {
 	--bg: #FBF1C7;
 	--text-color: #3C3836;
-	--accent: #7C6F64;
+	--color4: #98971A;
 	--navbar: rgba(251, 241, 199, 0.77);
-	--active-taba: rgba(124, 111, 100, 1);
-	--active-tabb: rgba(124, 111, 100, 0);
+	--active-taba: rgba(215, 153, 33, 1);
+	--active-tabb: rgba(215, 153, 33, 0);
 	--color1: #CC241D;
 	--color2: #98971A;
-	--color4: #D79921;
-	--color3: #458588;
-	--color5: #B16286;
+	--accent: #D79921;
+	--color5: #458588;
+	--color3: #B16286;
+	--color1-rgba: rgba(204, 36, 29, 0.7);
+	--color2-rgba: rgba(152, 151, 26, 0.7);
+	--color5-rgba: rgba(69, 133, 136, 0.7);
+	--color4-rgba: rgba(215, 153, 33, 0.7);
+	--color3-rgba: rgba(177, 98, 134, 0.7);
 }
+
+
+
+
+
+#name {
+	color: var(--color1);
+	text-decoration-color: var(--color1);
+	text-decoration: underline;
+	text-decoration-thickness: .1rem;
+	text-shadow:
+		-1px -1px 0 var(--color1-rgba),
+		1px -1px 0 var(--color1-rgba),
+		-1px 1px 0 var(--color1-rgba),
+		1px 1px 0 var(--color1-rgba),
+		0 0 5px var(--color1-rgba),
+		0 0 10px var(--color1-rgba),
+		0 0 15px var(--color1-rgba);
+}
+
+
+#name {
+	font-family: "Azeret Mono", monospace;
+	font-weight: 700;
+	font-style: italic;
+	/* color: var(--color1); */
+	position: absolute;
+	top: 77%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+
 
 
 body {
@@ -244,56 +303,9 @@ th {
 }
 
 
-#name {
-	font-family: "Azeret Mono", monospace;
-	font-weight: 700;
-	font-style: italic;
-	color: var(--color1);
-	position: absolute;
-	top: 77%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-decoration: underline;
-	text-decoration-thickness: .1rem;
-	text-decoration-color: var(--color1);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	text-align: center;
-}
 
 
-font roder? use var(--color1) with na opacity #name {
-	font-family: "Azeret Mono", monospace;
-	font-weight: 700;
-	font-style: italic;
-	color: var(--color1);
-	position: absolute;
-	top: 77%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-decoration: underline;
-	text-decoration-thickness: .1rem;
-	text-decoration-color: var(--color1);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	text-align: center;
-	/* Adding text-shadow for font border effect using var(--color1) with opacity */
-	text-shadow:
-		-1px -1px 0 rgba(var(--color1), 0.5),
-		1px -1px 0 rgba(var(--color1), 0.5),
-		-1px 1px 0 rgba(var(--color1), 0.5),
-		1px 1px 0 rgba(var(--color1), 0.5);
-}
+
 
 
 
