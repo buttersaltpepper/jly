@@ -1,9 +1,3 @@
-@import url('michaelangelo.css');
-
-
-
-
-/* Setting up the star containers */
 #stars,
 #stars2 {
 	position: fixed;
