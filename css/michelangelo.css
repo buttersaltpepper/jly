@@ -431,7 +431,7 @@ th {
 
 	#aestheticu {
 		width: 100%;
-		font-size: 1.7vw;
+		font-size: 2.1vw;
 		overflow-x: auto;
 		scrollbar-width: none;
 		-ms-overflow-style: none;
@@ -491,3 +491,120 @@ th {
 		left: .4em;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+	width: 37vw;
+	height: 100vh;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider .list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+	min-height: calc(var(--quantity) * var(--height));
+	width: 100%;
+	position: relative;
+}
+
+
+.item img {
+	height: var(--height);
+	position: absolute;
+	transform: translateX(-50%);
+	top: calc(-1 * var(--height));
+	animation: nicu var(--time) linear infinite;
+	animation-delay: calc((var(--time) / var(--quantity)) * (var(--position) - 1));
+}
+
+@keyframes nicu {
+	to {
+		top: 100%;
+	}
+}
+
+/* make the images in the center of the list container? */
+/* /* To center the images in the list container, we need to adjust the positioning and add flex properties to the container. Here's how we can modify the CSS: */
+*/
+/**/
+/* .slider { */
+/*     width: 37vw; */
+/*     height: 77vh; */
+/*     border: 1px solid red; */
+/*     /* Remove the overflow: hidden; to allow items to be visible outside the container if needed */
+*/
+/* } */
+/**/
+/* .slider .list { */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     justify-content: center; /* Center items vertically */
+*/
+/*     align-items: center; /* Center items horizontally */
+*/
+/*     height: 100%; */
+/*     min-height: calc(var(--quantity) * var(--height)); */
+/*     width: 100%; */
+/*     border: 1px solid blue; */
+/*     position: relative; */
+/* } */
+/**/
+/* .item img { */
+/*     height: var(--height); */
+/*     position: absolute; */
+/*     left: 50%; /* Center horizontally */
+*/
+/*     transform: translateX(-50%); /* Adjust for exact centering */
+*/
+/*     animation: nicu var(--time) linear infinite; */
+/*     animation-delay: calc((var(--time) / var(--quantity)) * (var(--position) - 1)); */
+/* } */
+/**/
+/* @keyframes nicu { */
+/*     from { */
+/*         top: -100%; */
+/*     } */
+/*     to { */
+/*         top: 100%; */
+/*     } */
+/* } */
+/**/
+/* /* These changes should center the images within the list container both horizontally and vertically */
+*/
+/**/
