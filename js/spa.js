@@ -5,7 +5,7 @@ const navItems = document.querySelectorAll('.nav-item a');
 
 const ff = () => {
 	const audio = new Audio("../mooo/hahaaaha.mp3");
-	audio.volume = 0.3;
+	audio.volume = 0.7;
 	return audio;
 };
 
