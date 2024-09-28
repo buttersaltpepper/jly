@@ -155,25 +155,23 @@ setMenuTopPosition();
 
 
 const playPauseBtn = document.getElementById('playPauseBtn');
-const themeAudio = document.getElementById('themeAudio');
 const playIcon = document.getElementById('playSvg');
 const pauseIcon = document.getElementById('pauseSvg');
 
-let playing = false;
+const themeAudio = new Audio('../mooo/erwinsmithchad.mpga');
 
 playPauseBtn.addEventListener('click', () => {
-	if (playing === false) {
-		playing = true;
-		// themeAudio.play();
+	if (themeAudio.paused) {
+		themeAudio.play();
 		playIcon.style.display = 'none';
 		pauseIcon.style.display = 'inline';
 	} else {
-		playing = false;
-		// themeAudio.pause();
+		themeAudio.pause();
 		playIcon.style.display = 'inline';
 		pauseIcon.style.display = 'none';
 	}
 });
+
 
 
 
